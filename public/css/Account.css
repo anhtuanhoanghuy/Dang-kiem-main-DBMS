@@ -1,0 +1,265 @@
+textarea{
+    resize: none;
+    margin-left: 28px;
+    font-size: 13px;
+}
+
+.Account{
+    margin: 20px;
+}
+
+
+.Account__header {
+    text-transform: uppercase;
+    line-height: 30px;
+    padding-bottom: 0.6rem;
+    border-bottom: lightgray solid 1px;
+}
+.Account__header > a {
+    color: #223bab;
+    border-bottom: #223bab solid 3px;
+    padding-bottom: 0.6rem;
+    line-height: 20px;
+    overflow: auto;
+    cursor: pointer;
+}
+
+.Account__main {
+    margin: 40px 0px ;
+    padding: 20px;
+    border-bottom: lightgray 1px solid;
+    border-right: lightgray 1px solid;
+    border-left: lightgray 1px solid;
+}
+
+.Account__main-header {
+    display: flex;
+}
+
+.Account__main-header > .Account__main-header-1{
+    height: 140px;
+    width: 140px;
+    order: 0;
+}
+
+
+.horizon1,  .horizon2, .horizon3{
+    height: 41px;
+    margin-top: 15px;
+    border-bottom: 1px solid black;
+}
+
+.horizon1 > span {
+    display: flex;
+    height: 41px;
+    width: 150px;
+    margin-left: 5px;
+    border-top:1px solid #6c757d;
+    border-right:1px solid #6c757d;
+    border-left:1px solid #6c757d;
+    border-bottom: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    color: #1d3cca; 
+    font: 15px Arial;
+    font-weight: bold;
+}
+
+
+.horizon3 > span {
+    display: flex;
+    height: 41px;
+    width: 150px;
+    margin-left: 305px;
+    border-top:1px solid #6c757d;
+    border-right:1px solid #6c757d;
+    border-left:1px solid #6c757d;
+    border-bottom: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    color: #1d3cca; 
+    font: 15px Arial;
+    font-weight: bold;
+}
+
+.Account-infomation1,
+.Account-infomation2,
+.Account-infomation3-GD,
+.Account-infomation3-PGD1,
+.Account-Account1,
+.Account-password1 {
+    display: flex;
+}
+
+
+.Account-infomation1 input,
+.Account-infomation2 input,
+.Account-account1 input,
+.Account-password1 input {
+    margin-left: 30px;
+    height: 31px;
+    width: 301px;
+    font-size: 15px;
+}
+
+.Account-infomation1 > .Account-infomation1-name,
+.Account-infomation3-PGD1 > .Account-infomation3-PGD,
+.Account-infomation2 > .Account-infomation2-email,
+.Account-infomation3-GD > .Account-infomation3-NGD
+{
+    flex: 1;
+    order: 0;
+}
+
+.Account-infomation1 > .Account-infomation1-adress,
+.Account-infomation3-SDTGD{
+
+    flex: 2;
+    order: 1;
+    margin-left: 0px;
+}
+
+.Account-infomation1 > .Account-infomation1-name,
+.Account-infomation2 > .Account-infomation2-email,
+.Account-account1 > .Account-account1-TK,
+.Account-password1 > .Account-password1-PW{
+    flex: 1;
+    order: 0;
+    margin-left: 0px;
+}
+
+.Account-infomation1 > .Account-infomation1-adress,
+.Account-infomation2 > .Account-infomation2-SDT,
+.Account-account1 > .Account-account1-newTK,
+.Account-password1 > .Account-password1-newPW {
+    flex: 1;
+    order: 1;
+    margin-left: 0px;
+}
+
+.Account__main-footer {
+    display: flex;
+    margin-top: 41px;
+    border-top: 1px solid black;
+    justify-content: right;
+}
+
+.Account__main-footer > .Account-save {
+    margin-top: 20px;
+}
+
+.btn-Account-save {
+    width: 151px;
+    height: 38px;
+    background-color: rgb(0 123 255);
+    border-radius: 7px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.btn-Account-save > span {
+    font-size: 15px;
+    color: var(--white-color);
+}
+.btn-Account-cancel {
+    width: 151px;
+    height: 38px;
+    background-color: green;
+    border-radius: 7px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.btn-Account-cancel > span {
+    font-size: 15px;
+    color: var(--white-color);
+}
+
+.btn-Account-delete {
+    width: 151px;
+    height: 38px;
+    background-color: red;
+    border-radius: 7px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.btn-Account-delete > span {
+    font-size: 15px;
+    color: var(--white-color);
+}
+
+
+.screen-cover {
+    display: none;
+    position: fixed;
+    background-color: white;
+    opacity: 0.8;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5010;
+}/****them*****/
+#popup{
+    display: none;
+    position: fixed;
+    left: 50%;
+    /********/
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /********/
+    width:500px;
+    background-color: #fdf0e0;
+    border: solid 3px #e6cba8;
+    border-radius: 10px;
+    /********/
+    z-index: 5020;
+    /********/
+    transition: 1s;
+}
+#popup>#alert {
+    margin: 15px;
+    font-size: 14px;
+}
+#popup > #Button {
+    float: right;
+    font-size: 14px;
+    margin: 0px 15px 15px 0px;
+}
+#popup > #Button > button {
+    box-sizing: border-box;
+    width: fit-content;
+    height: 28px;
+    background-color: rgb(240, 239, 239);
+    border: solid gray 1px;
+    border-radius: 2px;
+    color: black;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+#popup > #Button > button:hover {
+    background-color: rgb(211, 211, 211);
+    color: black;
+}
+/****them*****/
+/*responsive*/
+@media screen and ( max-width: 675px) {
+    .form-items > label {
+        margin-right: 0px;
+        width: 170px;
+    }
+}
+/****them*****/
+@media screen and (max-width: 540px) {
+    #popup {
+        width: 100%;
+        height: fit-content;
+    }
+}
+@media screen and (max-width: 450px) {
+    #popup>#alert {
+        margin: 20px;
+        margin-bottom: 10px;
+        text-indent: 0px;
+    }
+}

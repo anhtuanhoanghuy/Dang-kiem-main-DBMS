@@ -1,0 +1,253 @@
+.container {
+    margin: 20px;
+    position: relative;
+}
+.container-header {
+    text-transform: uppercase;
+    line-height: 30px;
+    padding-bottom: 0.6rem;
+    border-bottom: lightgray solid 1px;
+}
+.container-header > a {
+    color: #223bab;
+    border-bottom: #223bab solid 3px;
+    padding-bottom: 0.6rem;
+    line-height: 20px;
+    overflow: auto;
+    /* cursor: pointer; */
+}
+.container-content {
+    margin: 40px 0px ;
+    padding: 20px;
+    border-bottom: lightgray 1px solid;
+    border-right: lightgray 1px solid;
+    border-left: lightgray 1px solid;
+    font-size: 14px;
+}
+.form-items {
+    display: inline-block;
+    margin: 5px 0px;
+}
+.form-items-vehicle-state {
+    margin: 5px 0px;
+}
+.form-items-vehicle-state > span {
+    font-weight: bold;
+    color: #223bab;
+}
+.form-items > label {
+    display: inline-block;
+    margin-right: 10px;
+}
+.form-items > label.form-items-radio-labels {
+    width: fit-content;
+    margin-right: 0px;
+}
+.form-items > input, .form-items > select {
+    margin: 5px 30px 0px 0px;
+}
+.form-items > input[type = "radio"] {
+    vertical-align: -10%;
+}
+.form-items > button {
+    font-size: 14px;
+    width: 69px;
+    height: 28px;
+    background-color: #1d3cca;
+    border: solid lightgray 1px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.form-items > button:hover {
+    background-color: transparent;
+    border: #1d3cca solid 3px ;
+    color: #1d3cca;
+    font-weight: bolder;
+}
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    display: none;
+}
+table#data-table {
+    width: 100%;
+}
+table,th, td, tr {
+    border: black 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+th {
+    padding: 5px;
+    background-color: #1d3cca;
+    color: white;
+    font-weight: 500;
+    white-space: nowrap;
+}
+tr:nth-of-type(even) {
+    background-color: antiquewhite;
+}
+.pagination {
+    margin: 20px;
+    display: none;
+}
+.pagination > ul {
+    width: fit-content;
+    margin: auto;
+    box-shadow: 0 0 5px gray;
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+.pagination li {
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 2px;
+    margin: 0px 2px;
+}
+.pagination li.active, .pagination li:hover {
+    background-color: #1d3cca;
+    color: white;
+}
+.pagination li.disable, .pagination li.disable:hover {
+    background-color: transparent;
+    color: gray;
+}
+/****them*****/
+#registration-license-num {
+    font-size: 14px;
+    margin: 5px 10px 5px 0px;
+    padding: 5px 10px;
+    border: solid 1px;
+    border-radius: 30px;
+}/****them*****/
+
+@media screen and (max-width: 400px) {
+    .container-header {
+        font-size: 15px;
+        line-height: normal;
+        padding-bottom: 0.7rem;
+        white-space: nowrap;
+    }
+    .form-items > input, .form-items > select {
+        max-width: 130px;
+    }
+}
+
+#pop_up{
+    width: 900px; 
+    height: 1274px; 
+    position: relative; 
+    margin: 0px; 
+    background-color: palevioletred; 
+    border: 4px solid black; 
+    font-size: 17px;
+ }
+
+.pop_up{
+    position: fixed;
+    left: 50%;
+    /********/
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /********/
+    width:500px;
+    background-color: #fdf0e0;
+    border: solid 3px #e6cba8;
+    border-radius: 10px;
+    /********/
+    z-index: 5020;
+    /********/
+    transition: 1s;
+}
+
+/****them*****/
+@media screen and (max-width: 540px) {
+    .pop_up {
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+@media screen{
+    .hideThis{
+        display: Block; 
+    }
+    .printThis{
+        /* Sửa cái này thành Block */
+        display: none;
+    }
+}
+
+@media print{
+    .hideThis{
+        display: None;
+    }
+    .printThis{
+        display: block;
+    }
+}
+
+#certificate-content {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.heading-top {
+    display: flex;
+    color: red;
+}
+#heading-items-1 {
+    flex: 3;
+    text-align: center;
+    text-transform: uppercase;
+}
+#heading-items-2 {
+    flex: 4;
+    margin-left: 70px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#heading-items-3 {
+    text-align: center;
+    color: red;
+}
+.main-content {
+    margin: 0px 40px 40px 20px;
+    line-height: 21px;
+}
+#heading-items-4 {
+    text-align: center;
+    font-weight: bold;
+}
+.footer-top {
+    float: right; 
+    clear: both; 
+    width: 500px; 
+    text-align: center;
+}
+.footer-bottom {
+    position: absolute; 
+    bottom: 20px; 
+    font-size: 0.75em;
+}
+.underline {
+    text-decoration: underline;
+}
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.uppercase {
+    text-transform: uppercase;
+}

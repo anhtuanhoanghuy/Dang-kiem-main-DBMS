@@ -1,0 +1,281 @@
+.homePageContainer_News_marquee {
+    display: flex;
+    margin: 10px 20px;
+    border-bottom: solid 1px lightgrey;
+}
+.homePageContainer_News_marquee h2 {
+    display: inline-block;
+    text-align: center;
+    /*text-decoration: underline 2px;*/
+    margin: 0px;
+    min-width: 100px;
+    line-height: 30px;
+    color: #ff0000;
+}
+.homePageContainer_marquee {
+    display: inline-block;
+    white-space: nowrap;
+    height: 30px;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    background: #fefefe;
+    color: #616161;
+    z-index: 5;
+}
+.homePageContainer_marquee li::before {
+    content: ' \25AA';
+    color: #ff0000;
+    font-size: 20px;
+    vertical-align: top;
+    padding-right: 10px;
+}
+.homePageContainer_marquee li {
+    display: inline-block;
+    padding: 0px 10px;
+    list-style: square;
+    margin: 0px;
+    line-height: 30px;
+    height: 30px;
+    color: gray;
+}
+.homePageContainer_marquee ul {
+    position: absolute;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    line-height: 30px;
+    text-align: center;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: scroll-left 2s linear infinite;
+    -webkit-animation: scroll-left 2s linear infinite;
+    animation: scroll-left 20s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+.homePageContainer_marquee:hover ul {
+    animation-play-state: paused;
+}
+.homePageContainer_items {
+    display: flex;
+}
+.news_Slide_Container {
+    margin: 10px 20px;
+    display: block;
+    position: relative;
+}
+.preSlide, .nextSlide {
+    background-color: #616161;
+    border: none;
+    color: #fefefe;
+    position: absolute;
+    opacity: 0.5;
+    vertical-align: middle;
+    height: 60px;
+    width: 30px;
+    border-radius: 5px;
+    font-size: 24px;
+    z-index: 50;
+}
+.preSlide {
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+}
+.nextSlide {
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+}
+.preSlide:hover, .nextSlide:hover {
+    opacity: 0.8;
+}
+.news_Slide_Container img {
+    width: 100%;
+}
+.news_Slide_Container li,.news_Slide_Container ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.fadding_animate {
+    width:100%; animation:fading 10s infinite;
+}
+@keyframes fading{0%{opacity:0.1}50%{opacity:1}100%{opacity:0.1}}
+.Slide_Desc {
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    color: #fefefe;
+    background-color: #000000;
+    opacity: 0.5;
+    width: 100%;
+}
+.homePageContainer_linked-website {
+    width: 260px;
+    height: 112px;
+    display: inline-grid;
+    margin: 20px;
+    border: lightgrey solid 1px;
+}
+.homePageContainer_linked-website > div {
+    background-color: #ff0000;
+    padding: 0px 20px;
+    color: white;
+}
+.homePageContainer_linked-website h1 {
+    display: inline-block;
+    text-transform: uppercase;
+}
+#linked-website {
+    margin: 20px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.homePage_newsbox_container {
+    display: flex;
+}
+.homePage_newsbox {
+    margin: 10px 20px;
+    padding: 15px 15px 20px 15px;
+    border-style: solid;
+    /*border: #1d3cca 2px solid;*/
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to bottom, #1d3cca, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0));
+    font-size: 14px;
+    flex: 1;
+}
+.homePage_newsbox_title {
+    height: 45px;
+    font-size: 1.5em;
+}
+.homePage_newsbox_title a {
+    display: block;
+    text-transform: uppercase;
+    color: #223bab;
+    font-weight: bold;
+    line-height: 1.5em;
+    border-bottom: lightgray 1px solid ;
+}
+.new1 a img {
+    width: 100%;
+}
+.new1_title {
+    padding: 5px 0px;
+    text-align: justify;
+    border-bottom: lightgray 1px solid ;
+}
+.new1 a {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+}
+.date {
+    margin: 0px;
+    text-indent: 0px;
+}
+.date .time {
+    background: rgba(0, 0, 0, 0) url(/Dang-kiem-main-DBMS/public/img/schedule.png) no-repeat scroll 0px 2px/15px 15px;
+    padding: 3px 5px 3px 20px;
+}
+.time {
+    font-size: 12px;
+    font-weight: normal;
+    color: #364fbe;
+}
+.homePage_newsbox_content ul {
+    font-size: 14px;
+    margin: 15px;
+    padding: 0px;
+}
+.homePage_newsbox_content ul li {
+    color: #ff0000;
+    list-style: square;
+    border-bottom: lightgray 1px solid ;
+    width: 100%;
+    padding: 8px 0px 8px 0px;
+}
+.homePage_newsbox_content ul li a {
+    color: #000000;
+    font-weight: 500;
+}
+.homePageContainer_notification, .homePageContainer_lookUp {
+    display: block;
+    margin: 20px;
+    border: lightgrey solid 1px;
+    font-size: 14px;
+}
+.homePageContainer_notification > div > .notification, .homePageContainer_lookUp > div > .lookUp {
+    background-color: #ff0000;
+    padding: 0px 20px;
+    color: white;
+    display: block;
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 40px;
+}
+.notification_list  li, .lookUp_list  li {
+    padding: 0px;
+    color: #ff0000;
+}
+.notification_list  li a, .lookUp_list  li a {
+    color: #000000;
+}
+.lookUp_list ul {
+    padding: 0px 0px 0px 20px;
+}
+.lookUp_list  li {
+    list-style: none;
+    background: rgba(0, 0, 0, 0) url(/Dang-kiem-main-DBMS/public/img/feature_search.png) no-repeat scroll 0px 2px/16px 16px;
+    padding: 3px 5px 3px 20px;
+}
+
+/*responsive*/
+@media screen and ( max-width: 930px) {
+    .homePage_newsbox_container {
+        display: block;
+    }
+}
+@media screen and ( max-width: 675px) {
+    .homePageContainer_items {
+        display: block;
+    }
+    .homePage_newsbox_title {
+        font-size: 1.2em;
+    }
+}
