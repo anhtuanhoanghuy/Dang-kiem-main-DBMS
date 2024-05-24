@@ -1,15 +1,16 @@
 <?php 
 //Tạo tài khoản
+require("JWT.php");
 class CreateAccount extends Controller {
         public static function showMainPage() {
-            if ($_SESSION["account"] == "1") {
-                $show = parent :: view("MainPage", 
-                ["Page" => "CreateAccount"]);
-            } else if ($_SESSION["account"] != "2") {
-                $show = parent :: view("RegistrationMainPage", 
-                ["Page" => "HomePage"]);
+            if (isset($_COOKIE["token"])) {
+                $token = $_COOKIE["token"];
+                $jsonwebtoken = JWT::decode($token,"30102002",true);
+                if(json_encode($jsonwebtoken->role) == '1') {
+                    $show = parent :: view("MainPage", 
+                    ["Page" => "CreateAccount"]);
+                }
             }
-           
         }
 
         //Action tạo tài khoản

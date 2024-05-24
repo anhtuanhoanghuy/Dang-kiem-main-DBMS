@@ -72,7 +72,7 @@ document.getElementById("btn-Account-save").onclick = function() {
             validatePhoneNumber(giam_doc_phone)==true &&
             validateEmail(email) == true &&
             validateName (giam_doc) ==true && 
-            checkPassword(old_password,new_password,re_password) == true) { 
+            checkPassword(old_password,new_password,re_password) == true || checkPassword(CryptoJS.MD5(old_password),new_password,re_password) == true) { 
                 var status = true
                 if (pho_giam_doc_1 != "" && validateName (pho_giam_doc_1) == false){
                     status = false};

@@ -1,9 +1,6 @@
 <?php
-//Đăng xuất tài khoản và xóa SESSION
-session_start();
-     if(isset($_SESSION['account'])) {
-        unset($_SESSION['account']);
+    if(isset($_COOKIE['token'])) {
+        setcookie('token','',time()-3600,'/');
         header("location:/Dang-kiem-main-DBMS");
     }
-
 ?>

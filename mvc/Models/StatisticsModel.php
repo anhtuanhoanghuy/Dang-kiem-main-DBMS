@@ -109,7 +109,7 @@
         } 
 
         //chấp nhận đăng kiểm xe
-        public function acceptCar($registration_license_num) {
+        public function acceptCar($registration_license_num, $place) {
             $a = chr(mt_rand(65, 90));
             $b = chr(mt_rand(65, 90));
             $code = $a . $b . "-" . mt_rand(1000000, 9999999);
@@ -121,7 +121,7 @@
             WHERE Bien_so = ?
             ";
             $result = $this ->conn->prepare($sql);
-            $result->execute([$code, substr($_SESSION['account'],47), $registration_license_num]);
+            $result->execute([$code, $place, $registration_license_num]);
             $sql = "SELECT Ngay_dang_kiem_gan_nhat, Ngay_het_han, Ma_dang_kiem, Trang_thai, Noi_dang_kiem FROM car_information WHERE Bien_so = ?";
             $result = $this ->conn->prepare($sql);
             $result->execute([$registration_license_num]);

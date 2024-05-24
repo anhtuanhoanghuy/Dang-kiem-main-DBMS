@@ -65,6 +65,7 @@ function searchVehicleData() { //tìm kiếm xe
     vehicle_state:vehicle_state
     },function(data){
             data =  JSON.parse(data); //dữ liệu JSON
+            console.log(data);
             if (data == "error") {
             document.getElementById("status").style.display = "block";
             document.getElementById("warning").innerHTML = "Vui lòng nhập đúng định dạng.";

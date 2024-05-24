@@ -33,11 +33,12 @@
                     <div class="container-content-top">
                         <div class="container-content-section-1">
                             <div class="avatar">
-                                <img src="./public/img/gaixinh.jpg" alt="">
+                                <img id="profile_image" alt="">
                             </div>
                             <div class = "car-information">
                                 <div>Biển số xe: <strong class ="Bien_so"></strong></div>
                                 <div>Số đăng ký xe: <strong class ="So_dang_ky_xe"></strong></div>
+                                <div>Số khung: <strong class ="So_khung"></strong></div>
                                 <div>Tên chủ xe: <strong class ="Ten_chu_xe"></strong></div>
                                 <div>Ngày sinh: <strong class ="Ngay_sinh"></strong></div>
                                 <div>Địa chỉ: <strong class ="Dia_chi"></strong></div>
@@ -68,7 +69,7 @@
                     </div>
                     <div class="container-content-bottom">
                         <div class="car">
-                            <img src="./public/img/car.jpg" alt="">
+                            <img id = "car_image" alt="">
                         </div>
                         <div>
                             <button id = "accept">Chấp nhận đăng kiểm</button>
@@ -124,6 +125,7 @@
                         </div>
                         <div>Số đăng kí xe <a class="italic">(Registration Number):</a><a class = "So_dang_ky_xe bold" style="padding-left: 5px;"></a></div>
                         <div>Biển số xe <a class="italic">(Car Number):</a><a class = "Bien_so bold" style="padding-left: 5px;"></a></div>
+                        <div>Số khung <a class="italic">(Frame number code):</a><a class = "So_khung bold" style="padding-left: 5px;"></a></div>
                         <div>Nơi đăng ký xe <a class="italic">(Place of Registration):</a><a class = "Noi_dang_ky bold" style="padding-left: 5px;"></a></div>
                         <div>Ngày cấp đăng ký xe <a class="italic">(Date of Registration):</a><a class = "Ngay_cap bold" style="padding-left: 5px;"></a></div>
                         <div style="display: flex;">
@@ -133,7 +135,7 @@
                             <div style="flex: 1;">Nước sản xuất <a class="italic">(Production Country):</a><a style="padding-left: 5px;" class="Nuoc_san_xuat bold"></a></div>
                             <div style="flex: 1;">Năm sản xuất<a class="italic">(Production Year):</a><a style="padding-left: 5px;" class="bold">2012</a></div>
                         </div>
-                        <div>Địa điểm kiểm tra <a class="italic">(Date Site):</a><a class = "Noi_dang_kiem bold" style="padding-left: 5px;"></a></div>
+                        <div>Địa điểm kiểm tra <a class="italic">(Inspection Site):</a><a class = "Noi_dang_kiem bold" style="padding-left: 5px;"></a></div>
                         <div>Thời gian kiểm tra <a class="italic">(Inspection Site):</a><a class = "Ngay_dang_kiem_gan_nhat bold" style="padding-left: 5px;"></a></div>
                         <div>Thời gian hết hạn <a class="italic">(Expiration Date):</a><a class = "Ngay_het_han bold" style="padding-left: 5px;"></a></div>
                         <div>Số đăng ký kiểm tra <a class="italic">(Registered N<span style="vertical-align: 4px;" class="underline">o</span> for Inspection):</a><a class = "Ma_dang_kiem bold" style="padding-left: 5px;"></a></div>

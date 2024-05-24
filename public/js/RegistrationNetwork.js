@@ -14,6 +14,7 @@ $("#regisCentre_search-text").on("keyup", function() {
     var mikExp = /[\$\\\\\#\^\&\*\(\)\[\]\+\_\{\}\`\~\=\\!\|\/\?\.\,\:\;\"\'\@]/;  //Kiểm tra hợp thức
     if (text.search(mikExp) >= 0) {
         warning.innerHTML = "Vui lòng nhập đúng định dạng.";  
+
     } else {
         warning.innerHTML = "";
     }

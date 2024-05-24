@@ -8,12 +8,7 @@ require_once("../core/Database.php");
             $result->execute();
             if ($result->rowCount() ==  1) {
                 $user = $result->fetch(PDO::FETCH_ASSOC);
-                if ($user['role'] == '1') {
-                    return 1;
-                } else if ($user['role'] == '0') {
-                    return $user['ten'];
-                }
-                
+                return $user;
             } else {
                 return 0;
             }           

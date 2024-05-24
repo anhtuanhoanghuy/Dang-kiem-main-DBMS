@@ -7,6 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+        <script type="text/javascript" src="/Dang-kiem-main-DBMS/public/js/jquery-3.2.1.min.js"></script>
         <link rel = "stylesheet" href = "./public/css/Base.css">
         <link rel="stylesheet" href="./public/css/Home.css">
         <link rel="stylesheet" href="./public/css/Intro.css">

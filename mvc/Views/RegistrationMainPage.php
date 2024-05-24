@@ -36,7 +36,9 @@
                 <div class="introHeader_logo" style = "position:relative">
                     <img alt ="png" class="introHeader_logo-img" src="./public/img/logo_regiscenter.png">
                     <div class="name-container">
-                        <div id = "name"><?php echo $_SESSION['account'];?></div>
+                        <div id = "name"><?php if(isset($data['name'])) {
+                            echo $data['name'];
+                        };?></div>
                     </div>
                     
                 </div>

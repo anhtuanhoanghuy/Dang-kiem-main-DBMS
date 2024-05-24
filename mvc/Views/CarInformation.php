@@ -8,11 +8,12 @@ $data = $data['Bien_so_xe'][0];?>
                     <div class="container-content-top">
                         <div class="container-content-section-1">
                             <div class="avatar">
-                                <img src="./public/img/gaixinh.jpg" alt="">
+                                <img src= <?php echo $data['Anh_chu_xe'] ?> alt="">
                             </div>
                             <div class = "car-information">
                                 <h3><span>Biển số xe: </span> <?php echo $data['Bien_so'];?></h3>
                                 <h3><span>Số đăng ký xe: </span> <?php echo $data['So_dang_ky_xe'];?></h3>
+                                <h3><span>Số khung: </span> <?php echo $data['So_khung'];?></h3>
                                 <h3><span>Tên chủ xe: </span> <?php echo $data['Ten_chu_xe'];?></h3>
                                 <h3><span>Ngày sinh: </span> <?php echo $data['Ngay_sinh'];?></h3>
                                 <h3><span>Địa chỉ: </span> <?php echo $data['Dia_chi'];?></h3>
@@ -47,7 +48,7 @@ $data = $data['Bien_so_xe'][0];?>
                     </div>
                     <div class="container-content-bottom">
                         <div class="car">
-                            <img src="./public/img/car.jpg" alt="">
+                            <img src=<?php echo $data['Anh_xe'] ?> alt="">
                         </div>
                     </div>
                 </div>
@@ -99,6 +100,7 @@ $data = $data['Bien_so_xe'][0];?>
                             </div>
                             <div>Số đăng kí xe <a class="italic">(Registration Number):</a><a class = "So_dang_ky_xe bold" style="padding-left: 5px;"><?php echo $data['So_dang_ky_xe'];?></a></div>
                             <div>Biển số xe <a class="italic">(Car Number):</a><a class = "Bien_so bold" style="padding-left: 5px;"><?php echo $data['Bien_so'];?></a></div>
+                            <div>Số khung <a class="italic">(Frame Number Code):</a><a class = "So_khung bold" style="padding-left: 5px;"><?php echo $data['So_khung'];?></a></div>
                             <div>Nơi đăng ký xe <a class="italic">(Place of Registration):</a><a class = "Noi_dang_ky bold" style="padding-left: 5px;"><?php echo $data['Noi_dang_ky'];?></a></div>
                             <div>Ngày cấp đăng ký xe <a class="italic">(Date of Registration):</a><a class = "Ngay_cap bold" style="padding-left: 5px;"><?php echo $data['Ngay_cap'];?></a></div>
                             <div style="display: flex;">

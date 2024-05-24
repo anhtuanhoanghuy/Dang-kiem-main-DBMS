@@ -53,8 +53,11 @@ function searchVehicleData() { //tìm kiếm xe
             } else {
                 document.getElementById("warning").innerHTML = "";
                 document.getElementById("car_info").style.display = "Block";
-               $(".Bien_so").html(data[0].Bien_so)
+                $("#profile_image").attr('src',data[0].Anh_chu_xe);
+                $("#car_image").attr('src',data[0].Anh_xe);
+               $(".Bien_so").html(data[0].Bien_so);
                $(".So_dang_ky_xe").html(data[0].So_dang_ky_xe);
+               $(".So_khung").html(data[0].So_khung);
                $(".Ten_chu_xe").html(data[0].Ten_chu_xe);
                $(".Ngay_sinh").html(data[0].Ngay_sinh); 
                $(".Dia_chi").html(data[0].Dia_chi);
@@ -190,7 +193,6 @@ function searchVehicleData() { //tìm kiếm xe
 }
 
 window.addEventListener("click", function(event) {
-    console.log("1");
     if (event.target.matches('#screen-cover')) {
             document.getElementById("pop_up").style.display = "none";
             document.getElementById("screen-cover").style.display = "none";/****thêm******/
